@@ -1,0 +1,33 @@
+[
+  {
+    "name": "John Doe",
+    "date_of_birth": "1980-01-01",
+    "gender": "Male",
+    "contact_information": {
+      "email": "john.doe@example.com",
+      "phone": "1234567890"
+    },
+    "address": "123 Main St, Anytown, USA",
+    "passport_number": "A12345678",
+    "nationality": "American",
+    "frequent_flyer_number": "FF12345",
+    "travel_history": ["Paris", "New York", "Tokyo"],
+    "payment_information": {
+      "card_number": "1234567890123456",
+      "expiry": "12/25"
+    },
+    "preferences": { "seat": "Window", "meal": "Vegetarian" },
+    "special_requirements": { "assistance": "Wheelchair" },
+    "emergency_contact": { "name": "Jane Doe", "phone": "0987654321" },
+    "travel_insurance_details": {
+      "provider": "InsureTravel",
+      "policy_number": "XYZ123"
+    },
+    "flight_ratings_feedback": { "flight_no": "AB123", "rating": 4 },
+    "baggage_information": { "checked": 2, "carry_on": 1 },
+    "booking_history": ["Flight AB123", "Flight XY456"],
+    "loyalty_points": 150,
+    "marketing_preferences": { "email": true, "sms": false },
+    "voucher_amount": 50
+  }
+]
