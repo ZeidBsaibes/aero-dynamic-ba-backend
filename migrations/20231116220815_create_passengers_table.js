@@ -5,7 +5,11 @@
 exports.up = function (knex) {
   return knex.schema.createTable("passengers", (table) => {
     table.increments("passenger_id").primary();
-    table.string("name", 255).notNullable();
+    table.string("first_name", 255).notNullable();
+    table.string("last_name", 255).notNullable();
+    table.string("original_departure").notNullable();
+    table.integer("voucher_id").notNullable().defaultTo(876543245);
+    table.string("voucher_expiry").notNullable();
     table.date("date_of_birth");
     table.string("gender", 10);
     table.text("contact_information"); // Changed from json to text
@@ -24,7 +28,7 @@ exports.up = function (knex) {
     table.text("booking_history"); // Changed from json to text
     table.integer("loyalty_points");
     table.text("marketing_preferences"); // Changed from json to text
-    table.integer("voucher_amount").defaultTo(0);
+    table.integer("voucher_amount").defaultTo(300);
   });
 };
 
